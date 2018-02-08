@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 
-namespace WpfAppPictureBindingTest
+namespace PictureWatch
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml

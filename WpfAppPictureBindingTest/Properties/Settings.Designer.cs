@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfAppPictureBindingTest.Properties
+namespace PictureWatch.Properties
 {
 
 
