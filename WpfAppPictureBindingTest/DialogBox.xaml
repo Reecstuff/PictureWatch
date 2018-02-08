@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAppPictureBindingTest.DialogBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPictureBindingTest"
+        mc:Ignorable="d"
+        Title="DialogBox" 
+        Height="110" 
+        Width="400" 
+        MinHeight="110" 
+        MinWidth="400" 
+        MaxHeight="110" 
+        MaxWidth="400" 
+        WindowStyle="None" 
+        WindowState="Normal" 
+        WindowStartupLocation="CenterScreen"
+        Background="Black"
+        BorderThickness="0">
+
+    <Grid>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Foreground="White" Margin="10,15,0,0" TextWrapping="Wrap" Text="Picturepath:" VerticalAlignment="Top" Width="374"/>
+        <TextBox x:Name="TextBoxPath" HorizontalAlignment="Left" Background="Transparent" Foreground="White" Height="23" Margin="9,36,0,0" VerticalAlignment="Top" Width="375" TextWrapping="WrapWithOverflow"/>
+        <Button x:Name="ButtonQuit" Foreground="Red" Background="Transparent" BorderThickness="0" Content="X" HorizontalAlignment="Left" Margin="227,64,0,0" Width="86" VerticalAlignment="Top" RenderTransformOrigin="0.726,0.379" FontWeight="Bold" Click="ButtonQuit_Click"/>
+        <Button x:Name="ButtonAccept" Foreground="Green" Background="Transparent" BorderThickness="0" Content="Ok" FontWeight="Bold" HorizontalAlignment="Left" Margin="99,64,0,0" VerticalAlignment="Top" Width="83" Click="ButtonAccept_Click"/>
+    </Grid>
+</Window>
