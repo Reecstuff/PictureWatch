@@ -27,7 +27,6 @@ namespace PictureWatch
         public DialogBox()
         {
             InitializeComponent();
-            TextBoxPath.Text = @"C:\Users\User\Pictures";
         }
 
         private void ButtonQuit_Click(object sender, RoutedEventArgs e)

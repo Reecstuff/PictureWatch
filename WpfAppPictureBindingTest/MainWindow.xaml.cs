@@ -21,13 +21,14 @@ namespace PictureWatch
         DialogBox dialog;
         public MainWindow()
         {
+            path = @"C:\Users\User\Pictures";
             Initialize();
         }
 
         private void Initialize()
         {
             dialog = new DialogBox();
-
+            dialog.DialogText = path;
             if (dialog.ShowDialog() == true)
             {
                 path = dialog.DialogText;
