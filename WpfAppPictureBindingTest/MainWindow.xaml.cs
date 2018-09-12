@@ -39,11 +39,11 @@ namespace PictureWatch
             }
         }
 
-        private List<FileInfo> Pictures => new DirectoryInfo(path).EnumerateFiles("*.??g",SearchOption.TopDirectoryOnly).ToList();
+        private List<FileInfo> Pictures => new DirectoryInfo(path).EnumerateFiles("*.??g", SearchOption.TopDirectoryOnly).ToList();
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            switch(e.Key)
+            switch (e.Key)
             {
                 case Key.Escape:
                     Initialize();
@@ -52,14 +52,14 @@ namespace PictureWatch
                     ChangePicture(--currentPictureNumber);
                     break;
                 case Key.Right:
-                    ChangePicture(++currentPictureNumber);           
+                    ChangePicture(++currentPictureNumber);
                     break;
             }
         }
 
         private void ChangePicture(int i)
         {
-            if(!IsInRange(i))
+            if (!IsInRange(i))
             {
                 currentPictureNumber = currentPictureNumber <= 0 ? pictureList.Count - 1 : 0;
             }
@@ -68,7 +68,7 @@ namespace PictureWatch
 
         private Boolean IsInRange(int i)
         {
-            return i >= 0 && i <= pictureList.Count-1 ? true : false;
+            return i >= 0 && i <= pictureList.Count - 1 ? true : false;
         }
 
         private void SetPicture()
@@ -86,7 +86,7 @@ namespace PictureWatch
             image.Height = img.Height;
             image.Width = img.Width;
 
-            image.Source = bufferImage;            
+            image.Source = bufferImage;
         }
     }
 }
